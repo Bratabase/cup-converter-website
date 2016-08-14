@@ -1,0 +1,30 @@
+/* Styles! */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.result-table {
+    border-collapse: collapse;
+    background: white;
+    margin: 1rem auto;
+    border: 1px solid #CCC;
+}
+.result-table th {
+    min-width: 5rem;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+}
+.result-table td {
+    text-align: center;
+    line-height: 170%;
+    padding: 0.15rem;
+}
+
+.result-table tr:nth-child(2n) {
+    background-color: #F0F0F0;
+}
+.result-table tr th:first-child,
+.result-table tr td:first-child {
+    border-right: 1px solid #CCC;
+}
