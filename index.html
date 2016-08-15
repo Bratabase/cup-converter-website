@@ -2,31 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Convert cups</title>
+<meta name="description" content="Compare sizes between brands - Bratabase demo" />
+<meta name="viewport" content="width=device-width;user-scalable=yes;initial-scale=1"/ />
+<title>Convert cups - Bratabase API demo</title>
 <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-<section id="brands-picker">
+    <h1>Compare bra brands' sizing</h1>
+    <p class="important-note">
+        <strong>Important</strong>: This equivalence is constructed using <a href="http://www.bratabase.com/knowledge/index-sizes/">Index sizes</a>.
+        Please be aware of <a target="_blank" href="http://www.bratabase.com/knowledge/index-sizes/#Caveats">its limitations</a> before proceeding.
+    </p>
+<section id="brands-picker" class="section">
+    <h1>Pick two brands to compare</h1>
+    <p>Select two bra brands to see how their manufactured bands and cups match along.</p>
+    <div class="brands">
     <div>
-        <select id="left-brand"></select>
+        <select id="left-brand" disabled><option> Loading... </option></select>
     </div>
     <div>
-        <select id="right-brand"></select>
+        <select id="right-brand" disabled><option> Loading... </option></select>
     </div>
+</div>
 </section>
-<section id="results">
-<table id="bands-table" class="result-table">
-</table>
-<table id="cups-table" class="result-table">
-</table>
-<p>
-<a href="#" id="bratabase-link">View this on Bratabase</a>
+<section id="results" class="section">
+<p class="index-warning">
+    Equivalence <strong>DOES NOT</strong> imply equal fit.
+    <a href="#" id="bratabase-link">See the full comparison in Bratabase.com</a>
 </p>
+<div class="results-tables">
+    <table id="bands-table" class="result-table"></table>
+    <table id="cups-table" class="result-table"></table>
+</div>
 </section>
+<p class="credits">
+    This is an demo application using <a href="http://developers.bratabase.com/">Bratabase's API</a> capabilities. The source
+    <a href="https://github.com/Bratabase/cup-converter-website">code is available
+    on Bratabase's Github</a>.
+</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://rawgit.com/Bratabase/bratabase-js/master/bratabase.js"></script>
-<!-- <script src="http://localhost:5000/bratabase.js"></script> -->
+<!-- <script src="https://rawgit.com/Bratabase/bratabase-js/master/bratabase.js"></script> -->
+<script src="http://localhost:5000/bratabase.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
