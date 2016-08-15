@@ -9,3 +9,5 @@ client on the browser to perform the comparisons.
 It accesses the [sizing compare API](http://developers.bratabase.com/brand-sizing-compare/)
  to construct the side by side tables for the selected brands just like the
   brand compare feature on [Bratabase.com](http://www.bratabase.com/).
+
+See it live here: https://rawgit.com/Bratabase/cup-converter-website/master/index.html
